@@ -28,11 +28,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ya6-sx-jgg">
                                 <rect key="frame" x="20" y="34" width="374" height="856"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="243" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-iG-YKb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-iG-YKb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47b-FX-4D9" userLabel="Question Title Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="95" height="23.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
                                                 <color key="textColor" name="YP White"/>
                                                 <nil key="highlightedColor"/>
@@ -128,7 +128,9 @@
                     <connections>
                         <outlet property="counterLabel" destination="AE2-IL-XpP" id="Uhb-tk-ION"/>
                         <outlet property="imageView" destination="vtL-fm-GUr" id="Wlo-Sn-6iZ"/>
+                        <outlet property="noButton" destination="pfN-hw-c3Q" id="nNu-TC-jJl"/>
                         <outlet property="textLabel" destination="m5D-PN-DFe" id="GLG-jM-CYF"/>
+                        <outlet property="yesButton" destination="6GX-CZ-YwO" id="Nbs-ei-3nY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

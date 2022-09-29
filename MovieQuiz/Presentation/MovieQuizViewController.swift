@@ -1,7 +1,7 @@
 import UIKit
 
 final class MovieQuizViewController: UIViewController {
-  
+    
     //MARK: - Модель для описания Mock-данных
     
     struct QuizQuestion {
@@ -17,7 +17,7 @@ final class MovieQuizViewController: UIViewController {
         let question: String
         let questionNumber: String
     }
-
+    
     //MARK: - Модель для описания результата квиза
     
     struct QuizResultsViewModel {
@@ -33,47 +33,47 @@ final class MovieQuizViewController: UIViewController {
             image: "The Godfather",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-     
+        
         QuizQuestion(
             image: "The Dark Knight",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-
+        
         QuizQuestion(
             image: "Kill Bill",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-
+        
         QuizQuestion(
             image: "The Avengers",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-
+        
         QuizQuestion(
             image: "Deadpool",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-
+        
         QuizQuestion(
             image: "The Green Knight",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: true),
-
+        
         QuizQuestion(
             image: "Old",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: false),
-
+        
         QuizQuestion(
             image: "The Ice Age Adventures of Buck Wild",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: false),
-            
+        
         QuizQuestion(
             image: "Tesla",
             text: "Рейтинг этого фильма больше чем 6?",
             correctAnswer: false),
-
+        
         QuizQuestion(
             image: "Vivarium",
             text: "Рейтинг этого фильма больше чем 6?",
@@ -91,7 +91,7 @@ final class MovieQuizViewController: UIViewController {
     //MARK: - Переменная изображения
     
     @IBOutlet private weak var imageView: UIImageView!
-  
+    
     //MARK: - Переменная текста вопроса
     
     @IBOutlet private weak var textLabel: UILabel!
@@ -100,9 +100,17 @@ final class MovieQuizViewController: UIViewController {
     
     @IBOutlet private weak var counterLabel: UILabel!
     
+    //MARK: - Переменная кнопки НЕТ
+    
+    @IBOutlet private weak var noButton: UIButton!
+    
+    //MARK: - Переменная кнопки ДА
+    
+    @IBOutlet private weak var yesButton: UIButton!
+    
     //MARK: - Вызов функции для наполнения View данными
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         show(quiz: convert(model: questions[currentQuestionIndex]))
@@ -130,8 +138,8 @@ final class MovieQuizViewController: UIViewController {
     //MARK: - Функция нажатия на кнопку НЕТ
     
     @IBAction private func noButtonClicked(_ sender: UIButton) {
-    
-    let isAnswerRight = questions[currentQuestionIndex].correctAnswer ? false : true
+        
+        let isAnswerRight = !questions[currentQuestionIndex].correctAnswer
         showAnswerResult(isCorrect: isAnswerRight)
     }
     
@@ -139,18 +147,30 @@ final class MovieQuizViewController: UIViewController {
     
     @IBAction private func yesButtonClicked(_ sender: UIButton) {
         
-        let isAnswerRight = questions[currentQuestionIndex].correctAnswer ? true : false
-                showAnswerResult(isCorrect: isAnswerRight)
+        let isAnswerRight = questions[currentQuestionIndex].correctAnswer
+        showAnswerResult(isCorrect: isAnswerRight)
+    }
+    
+    //MARK: - Функция включения/отключения кнопок ДА и НЕТ
+    
+    private func buttonStatus(isEnabled: Bool) {
+        if !isEnabled {
+            yesButton.isEnabled = false
+            noButton.isEnabled = false
+        } else {
+            yesButton.isEnabled = true
+            noButton.isEnabled = true
+        }
     }
     
     //MARK: - Функция отображения результата прохождения квиза
     
     private func show(quiz result: QuizResultsViewModel){
-       
+        
         let alert = UIAlertController(
-                                    title: result.title,
-                                    message: result.text,
-                                    preferredStyle: .alert)
+            title: result.title,
+            message: result.text,
+            preferredStyle: .alert)
         
         let action = UIAlertAction(title: result.buttonText,
                                    style: .default) { _ in
@@ -160,7 +180,7 @@ final class MovieQuizViewController: UIViewController {
             let firstQuestion = self.questions[self.currentQuestionIndex]
             let viewModel = self.convert(model: firstQuestion)
             self.show(quiz: viewModel)
-                                   }
+        }
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
@@ -173,37 +193,41 @@ final class MovieQuizViewController: UIViewController {
         }
         
         imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 20
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
+        buttonStatus(isEnabled: false)
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
             self.showNextQuestionOrResults()
             self.imageView.layer.borderWidth = 0
+            self.buttonStatus(isEnabled: true)
         }
     }
-
+    
     //MARK: - Функция перехода к следующему вопросу или к результатам квиза
     
     private func showNextQuestionOrResults() {
-      
+        
         if currentQuestionIndex == questions.count - 1 {
             
-        let text = "Ваш результат: \(correctAnswer) из 10"
+            let text = "Ваш результат: \(correctAnswer) из 10"
             
             let viewModel = QuizResultsViewModel(title: "Раунд окончен!",
                                                  text: text,
                                                  buttonText: "Сыграть еще раз")
             show(quiz: viewModel)
-    } else {
+        } else {
             currentQuestionIndex += 1
-    
-        let nextQuestion = questions[currentQuestionIndex]
-        let viewModel = convert(model: nextQuestion)
-        show(quiz: viewModel)
+            
+            let nextQuestion = questions[currentQuestionIndex]
+            let viewModel = convert(model: nextQuestion)
+            show(quiz: viewModel)
         }
     }
 }
-/* Привет! Большие трудности вызывала верстка приложения и я не уверен, что эта часть задания соответствует требованиям, визуально все выглядит нормально, но многие цифры не соотвествуют макету. Делал все по учебнику, очень много раз переделывал, но сделать все один-в-один не удается. Если работа не будет принята(или будет) - буду рад каким-либо ЦУ по работе с констрейнтами, они у меня живут своей жизнью и мешают установке нужных размеров(и наоборот). Заранее спасибо!
- */
- 
- 
+
+
+
