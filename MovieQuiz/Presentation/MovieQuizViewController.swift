@@ -153,14 +153,9 @@ final class MovieQuizViewController: UIViewController {
     
     //MARK: - Функция включения/отключения кнопок ДА и НЕТ
     
-    private func buttonStatus(isEnabled: Bool) {
-        if !isEnabled {
-            yesButton.isEnabled = false
-            noButton.isEnabled = false
-        } else {
-            yesButton.isEnabled = true
-            noButton.isEnabled = true
-        }
+    private func setButtonsEnabled(_ isEnabled: Bool) {
+        yesButton.isEnabled = isEnabled
+        noButton.isEnabled = isEnabled
     }
     
     //MARK: - Функция отображения результата прохождения квиза
@@ -197,13 +192,13 @@ final class MovieQuizViewController: UIViewController {
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
-        buttonStatus(isEnabled: false)
+        setButtonsEnabled(false)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             
             self.showNextQuestionOrResults()
             self.imageView.layer.borderWidth = 0
-            self.buttonStatus(isEnabled: true)
+            self.setButtonsEnabled(true)
         }
     }
     
