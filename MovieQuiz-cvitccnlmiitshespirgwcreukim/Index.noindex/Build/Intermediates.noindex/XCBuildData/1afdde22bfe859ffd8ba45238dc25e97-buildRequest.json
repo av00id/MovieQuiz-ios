@@ -1,0 +1,61 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "0014556b3e3669fd54a4fd06311d309ac4ac34449270730f00c17c6b3257deea"
+    }
+  ],
+  "containerPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos16.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios",
+      "indexDataStoreFolderPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

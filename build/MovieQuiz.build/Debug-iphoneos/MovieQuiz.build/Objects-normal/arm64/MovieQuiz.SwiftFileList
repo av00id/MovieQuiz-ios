@@ -1,0 +1,16 @@
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/UIColor+Extensions.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/Array+Extensions.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Presentation/MovieQuizViewController.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/AlertPresenterDelegate\ .swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizStepViewModel.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/AlertPresenterProtocol.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/AlertModel.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryProtocol\ .swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizQuestion.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactory.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Presentation/AlertPresenter.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/Date+Extensions.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryDelegate\ .swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/AppDelegate.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizResultsViewModel.swift
+/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/SceneDelegate.swift
