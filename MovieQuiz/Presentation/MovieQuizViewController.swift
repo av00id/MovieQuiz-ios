@@ -32,11 +32,18 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 20
+        
         questionFactory = QuestionFactory(delegate: self)
         alertPresenter = AlertPresenter(delegate: self)
         statisticService = StatisticServiceImplementation()
         questionFactory?.requestNextQuestion()
         
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     //MARK: - Управление кнопками
@@ -85,8 +92,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
             correctAnswer += 1
         }
         
-        imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 20
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
@@ -149,4 +154,4 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     
 }
 
-
+///К сожалению, совсем не дружу с терминалом, создать файл гитигнор по инструкции удалось, а что делать с ним дальше - непонятно(
