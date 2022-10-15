@@ -1,0 +1,20 @@
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Presentation/AlertPresenter.swift":
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenter.swiftdeps"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenter.dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenter.o"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenter.d"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/Date+Extensions.swift":
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/Date+Extensions.swiftdeps"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/Date+Extensions.d"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/Date+Extensions.o"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/Date+Extensions.dia"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizQuestion.swift":
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizQuestion.d"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizQuestion.dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizQuestion.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizQuestion.swiftdeps"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactory.swift":
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactory.dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactory.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactory.swiftdeps"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz-cvitccnlmiitshespirgwcreukim/Build/Intermediates.noindex/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactory.d"

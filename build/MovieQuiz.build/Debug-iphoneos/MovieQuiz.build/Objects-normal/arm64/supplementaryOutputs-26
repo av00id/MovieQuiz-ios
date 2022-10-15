@@ -1,0 +1,20 @@
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryProtocol .swift":
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryProtocol .swiftdeps"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryProtocol .dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryProtocol .o"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryProtocol .d"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/AlertPresenterProtocol.swift":
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenterProtocol.d"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenterProtocol.dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenterProtocol.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertPresenterProtocol.swiftdeps"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/AlertModel.swift":
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertModel.d"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertModel.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertModel.swiftdeps"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AlertModel.dia"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizStepViewModel.swift":
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizStepViewModel.dia"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizStepViewModel.o"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizStepViewModel.d"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizStepViewModel.swiftdeps"

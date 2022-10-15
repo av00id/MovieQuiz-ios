@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0C3A5B09-8569-4FA9-B2DF-6FADA2923009</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0C3A5B09-8569-4FA9-B2DF-6FADA2923009.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022238.07137799</real>
+			<key>timeStoppedRecording</key>
+			<real>687022275.86048102</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>0C3A5B09-8569-4FA9-B2DF-6FADA2923009</string>
+		</dict>
+		<key>1D464675-4448-4C43-A941-109DDD21FE5B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1D464675-4448-4C43-A941-109DDD21FE5B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>686777774.96615601</real>
+			<key>timeStoppedRecording</key>
+			<real>686777775.03867996</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>1D464675-4448-4C43-A941-109DDD21FE5B</string>
+		</dict>
+		<key>35C63F37-8F9F-4E96-8BC0-3C281019B33E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>35C63F37-8F9F-4E96-8BC0-3C281019B33E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687023889.39917195</real>
+			<key>timeStoppedRecording</key>
+			<real>687023890.29858899</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>35C63F37-8F9F-4E96-8BC0-3C281019B33E</string>
+		</dict>
+		<key>52BD62F1-DCF7-40FF-8B9C-0BF02B84F099</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>52BD62F1-DCF7-40FF-8B9C-0BF02B84F099.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687023106.30836904</real>
+			<key>timeStoppedRecording</key>
+			<real>687023134.18497097</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>52BD62F1-DCF7-40FF-8B9C-0BF02B84F099</string>
+		</dict>
+		<key>55EC7AB1-467C-466F-A0DE-4B5EDC248AAF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>55EC7AB1-467C-466F-A0DE-4B5EDC248AAF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022323.47531998</real>
+			<key>timeStoppedRecording</key>
+			<real>687022323.78847504</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>55EC7AB1-467C-466F-A0DE-4B5EDC248AAF</string>
+		</dict>
+		<key>705A78A4-9F33-467D-895D-42C5CC2C56BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>705A78A4-9F33-467D-895D-42C5CC2C56BD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687024163.00432897</real>
+			<key>timeStoppedRecording</key>
+			<real>687024172.25089204</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>705A78A4-9F33-467D-895D-42C5CC2C56BD</string>
+		</dict>
+		<key>78561EC6-E9F6-424D-9B52-2AAEE9663D31</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>78561EC6-E9F6-424D-9B52-2AAEE9663D31.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022403.09284902</real>
+			<key>timeStoppedRecording</key>
+			<real>687022409.76146495</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>78561EC6-E9F6-424D-9B52-2AAEE9663D31</string>
+		</dict>
+		<key>C61B9031-525D-40FC-B234-DD07687C0A4A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C61B9031-525D-40FC-B234-DD07687C0A4A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022417.16959095</real>
+			<key>timeStoppedRecording</key>
+			<real>687022417.26997995</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>C61B9031-525D-40FC-B234-DD07687C0A4A</string>
+		</dict>
+		<key>C72578BB-BB7F-4205-A13F-2626CA89BD8A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C72578BB-BB7F-4205-A13F-2626CA89BD8A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022337.88830602</real>
+			<key>timeStoppedRecording</key>
+			<real>687022343.12859905</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>C72578BB-BB7F-4205-A13F-2626CA89BD8A</string>
+		</dict>
+		<key>CCE92BB5-C34E-47CB-A5CA-634B2FA5EA17</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CCE92BB5-C34E-47CB-A5CA-634B2FA5EA17.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687023899.67962599</real>
+			<key>timeStoppedRecording</key>
+			<real>687023899.81093895</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>CCE92BB5-C34E-47CB-A5CA-634B2FA5EA17</string>
+		</dict>
+		<key>DE604CD9-BC57-45B8-B8B8-2511D1435F8E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DE604CD9-BC57-45B8-B8B8-2511D1435F8E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687024105.81668496</real>
+			<key>timeStoppedRecording</key>
+			<real>687024106.35583603</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>DE604CD9-BC57-45B8-B8B8-2511D1435F8E</string>
+		</dict>
+		<key>F019EACB-26E7-44A3-BE7B-6143FA7BB771</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F019EACB-26E7-44A3-BE7B-6143FA7BB771.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687024269.64602995</real>
+			<key>timeStoppedRecording</key>
+			<real>687024309.52401495</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>F019EACB-26E7-44A3-BE7B-6143FA7BB771</string>
+		</dict>
+		<key>F67F61CB-1568-4452-BD92-9DF0D7525F19</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F67F61CB-1568-4452-BD92-9DF0D7525F19.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieQuiz project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieQuiz</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieQuiz</string>
+			<key>timeStartedRecording</key>
+			<real>687022822.59991002</real>
+			<key>timeStoppedRecording</key>
+			<real>687022844.34514105</real>
+			<key>title</key>
+			<string>Build MovieQuiz</string>
+			<key>uniqueIdentifier</key>
+			<string>F67F61CB-1568-4452-BD92-9DF0D7525F19</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

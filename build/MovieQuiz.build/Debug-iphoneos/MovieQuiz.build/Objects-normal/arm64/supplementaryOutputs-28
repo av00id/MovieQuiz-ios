@@ -1,0 +1,20 @@
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizResultsViewModel.swift":
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizResultsViewModel.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizResultsViewModel.swiftdeps"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizResultsViewModel.dia"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuizResultsViewModel.d"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryDelegate .swift":
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryDelegate .o"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryDelegate .dia"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryDelegate .swiftdeps"
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/QuestionFactoryDelegate .d"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/AppDelegate.swift":
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AppDelegate.d"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AppDelegate.o"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/AppDelegate.dia"
+"/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/SceneDelegate.swift":
+  dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/SceneDelegate.d"
+  object: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/SceneDelegate.o"
+  diagnostics: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/SceneDelegate.dia"
+  swift-dependencies: "/Users/andreevsergej/Documents/MovieQuiz-ios/build/MovieQuiz.build/Debug-iphoneos/MovieQuiz.build/Objects-normal/arm64/SceneDelegate.swiftdeps"

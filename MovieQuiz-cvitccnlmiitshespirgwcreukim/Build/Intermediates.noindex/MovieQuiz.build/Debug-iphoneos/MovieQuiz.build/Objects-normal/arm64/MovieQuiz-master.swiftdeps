@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
+options: "8649b225ec3742739ff34bb2150c80be9d53c762e93a3ffd9bd2e1abf4567501"
+build_start_time: [1665331471, 699410915]
+build_end_time: [1665331509, 486034870]
+inputs:
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/AppDelegate.swift": [1665077862, 342117547]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/Array+Extensions.swift": [1664997982, 700453758]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/Date+Extensions.swift": [1664997982, 700944423]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Helpers/UIColor+Extensions.swift": [1664997982, 701501369]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/AlertModel.swift": [1665068854, 335142612]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizQuestion.swift": [1665004000, 192050457]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizResultsViewModel.swift": [1665004000, 70986270]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Models/QuizStepViewModel.swift": [1665004000, 219885826]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Presentation/AlertPresenter.swift": [1665067959, 764702081]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Presentation/MovieQuizViewController.swift": [1665080823, 81682443]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/SceneDelegate.swift": [1664997984, 533907651]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/AlertPresenterDelegate .swift": [1665067959, 626982927]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/AlertPresenterProtocol.swift": [1665067959, 674667835]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactory.swift": [1665080823, 166267871]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryDelegate .swift": [1665067959, 788870334]
+  "/Users/andreevsergej/Documents/MovieQuiz-ios/MovieQuiz/Services/QuestionFactoryProtocol .swift": [1665059801, 229857683]
