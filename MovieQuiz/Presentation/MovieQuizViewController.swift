@@ -27,6 +27,8 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     
     @IBOutlet private weak var yesButton: UIButton!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     //MARK: - Вызов функций во View
     
     override func viewDidLoad() {
@@ -35,10 +37,11 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 20
         
-        questionFactory = QuestionFactory(delegate: self)
+        questionFactory = QuestionFactory(moviesLoader: MoviesLoader(), delegate: self)
         alertPresenter = AlertPresenter(delegate: self)
         statisticService = StatisticServiceImplementation()
-        questionFactory?.requestNextQuestion()
+        questionFactory?.loadData()
+        showLoadingIndicator()
         
     }
     
@@ -63,16 +66,27 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         noButton.isEnabled = isEnabled
     }
     
+    //MARK: - Индикатор загрузки
+    
+    private func showLoadingIndicator() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+    private func hideLoadingIndicator() {
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
+    }
+    
     //MARK: - Функции
- 
+    
     private func convert(model: QuizQuestion) -> QuizStepViewModel {
         
         return QuizStepViewModel(
-            image: UIImage(named: model.image) ?? UIImage(),
+            image: UIImage(data: model.image) ?? UIImage(),
             question: model.text,
             questionNumber: "\(currentQuestionIndex + 1)/\(questionsAmount)")
     }
- 
+    
     private func show(quiz step: QuizStepViewModel) {
         imageView.image = step.image
         textLabel.text = step.question
@@ -152,6 +166,27 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         present(alert, animated: true)
     }
     
+    //MARK: - Сеть
+    
+    private func showNetworkError(message: String) {
+        hideLoadingIndicator()
+        
+        let model = AlertModel(title: "Ошибка",
+                               message: message,
+                               buttonText: "Попробовать еще раз") { [weak self] _ in
+            guard let self = self else { return }
+            self.questionFactory?.loadData()
+        }
+        alertPresenter?.show(alertModel: model)
+    }
+    func didLoadDataFromServer() {
+        hideLoadingIndicator()
+        questionFactory?.requestNextQuestion()
+    }
+    func didFailToLoadData(with error: Error) {
+        showNetworkError(message: error.localizedDescription)
+    }
 }
 
-///К сожалению, совсем не дружу с терминалом, создать файл гитигнор по инструкции удалось, а что делать с ним дальше - непонятно(
+
+
