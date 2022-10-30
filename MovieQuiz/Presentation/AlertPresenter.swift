@@ -25,6 +25,7 @@ class AlertPresenter: AlertPresenterPotocol {
                                style: .default,handler: alertModel.completion)
 
     alert.addAction(action)
+    alert.view.accessibilityIdentifier = "Game results"
     delegate?.presentAlert(alert)
     }
 }

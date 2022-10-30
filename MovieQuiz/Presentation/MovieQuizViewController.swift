@@ -3,7 +3,8 @@ import UIKit
 final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, AlertPresenterDelegate {
     
     //MARK: - Переменные и аутлеты
-    private let questionsAmount: Int = 10
+    
+    private let presenter = MovieQiuzPresenter()
     
     private var questionFactory: QuestionFactoryProtocol?
     
@@ -12,8 +13,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     private var alertPresenter: AlertPresenterPotocol?
     
     private var statisticService: StatisticService?
-    
-    private var currentQuestionIndex: Int = 0
     
     private var correctAnswer: Int = 0
     
@@ -27,7 +26,11 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     
     @IBOutlet private weak var yesButton: UIButton!
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     //MARK: - Вызов функций во View
     
@@ -43,10 +46,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         questionFactory?.loadData()
         showLoadingIndicator()
         
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
     
     //MARK: - Управление кнопками
@@ -78,14 +77,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     }
     
     //MARK: - Функции
-    
-    private func convert(model: QuizQuestion) -> QuizStepViewModel {
-        
-        return QuizStepViewModel(
-            image: UIImage(data: model.image) ?? UIImage(),
-            question: model.text,
-            questionNumber: "\(currentQuestionIndex + 1)/\(questionsAmount)")
-    }
     
     private func show(quiz step: QuizStepViewModel) {
         imageView.image = step.image
@@ -122,12 +113,12 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     
     private func showNextQuestionOrResults() {
         
-        if currentQuestionIndex == questionsAmount - 1 {
-            statisticService?.store(correct: correctAnswer, total: questionsAmount)
+        if presenter.isLastQuestion() {
+            statisticService?.store(correct: correctAnswer, total: presenter.questionsAmount)
             
             let alertModel = AlertModel(
                 title: "Раунд окончен!",
-                message: "Ваш результат: \(correctAnswer) из \(questionsAmount)\n" +
+                message: "Ваш результат: \(correctAnswer) из \(presenter.questionsAmount)\n" +
                 "Количество сыгранных квизов: \(statisticService?.gamesCount ?? 0)\n" +
                 "Рекорд: \(statisticService?.bestGame.gameStatistics() ?? "Данные отсутствуют")\n" +
                 "Средняя точность: " + String(format: "%.2f", statisticService?.totalAccuracy ?? 0.00) + "%",
@@ -135,7 +126,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
                 completion: {[weak self] _ in
                     guard let self = self else { return }
                     
-                    self.currentQuestionIndex = 0
+                    self.presenter.currentQuestionIndex = 0
                     self.correctAnswer = 0
                     
                     self.questionFactory?.requestNextQuestion()
@@ -143,7 +134,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
             alertPresenter?.show(alertModel:alertModel)
             
         } else {
-            currentQuestionIndex += 1
+            presenter.switchToNextQuestion()
             
             questionFactory?.requestNextQuestion()
         }
@@ -156,7 +147,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         }
         
         currentQuestion = question
-        let viewModel = convert(model: question)
+        let viewModel = presenter.convert(model: question)
         DispatchQueue.main.async { [weak self] in
             self?.show(quiz: viewModel)
         }
