@@ -22,7 +22,8 @@ class AlertPresenter: AlertPresenterPotocol {
         preferredStyle: .alert)
     
     let action = UIAlertAction(title: alertModel.buttonText,
-                               style: .default,handler: alertModel.completion)
+                               style: .default,
+                               handler: alertModel.completion)
 
     alert.addAction(action)
     alert.view.accessibilityIdentifier = "Game results"
