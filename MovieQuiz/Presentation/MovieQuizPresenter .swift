@@ -8,9 +8,20 @@
 import Foundation
 import UIKit
 
-final class MovieQiuzPresenter: QuestionFactoryDelegate {
+protocol MovieQuizVeiwControllerProtocol: AnyObject {
     
-    private weak var viewController: MovieQuizViewController?
+    func setButtonsEnabled(_ isEnabled: Bool)
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
+    func show(quiz step: QuizStepViewModel)
+    func show(quiz result: QuizResultsViewModel)
+    func highlightImageBorder(isAnswerRight: Bool)
+    func showNetworkError(message: String)
+}
+
+final class MovieQuizPresenter: QuestionFactoryDelegate {
+    
+    private weak var viewController: MovieQuizVeiwControllerProtocol?
     private var currentQuestion: QuizQuestion?
     private var questionFactory: QuestionFactoryProtocol?
     private var statisticService: StatisticService!
@@ -18,7 +29,8 @@ final class MovieQiuzPresenter: QuestionFactoryDelegate {
     private var currentQuestionIndex: Int = 0
     private var correctAnswer: Int = 0
     
-    init(viewController: MovieQuizViewController) {
+    
+    init(viewController: MovieQuizVeiwControllerProtocol) {
         self.viewController = viewController
         
         questionFactory = QuestionFactory(moviesLoader: MoviesLoader(), delegate: self)
@@ -64,6 +76,7 @@ final class MovieQiuzPresenter: QuestionFactoryDelegate {
     
     private func proccedWithAnswer(isCorrect: Bool) {
         didAnswer(isCorrect: isCorrect)
+        
         viewController?.highlightImageBorder(isAnswerRight: isCorrect)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [ weak self] in
@@ -71,7 +84,6 @@ final class MovieQiuzPresenter: QuestionFactoryDelegate {
             
             
             self.proceedToNextQuestionOrResults()
-            self.viewController?.removeHighlight()
             self.viewController?.setButtonsEnabled(true)
         }
     }
@@ -86,30 +98,42 @@ final class MovieQiuzPresenter: QuestionFactoryDelegate {
     
     private func proceedToNextQuestionOrResults() {
         
-        if isLastQuestion() {
-            statisticService?.store(correct: correctAnswer, total: questionsAmount)
+        if self.isLastQuestion() {
             
-            let alertModel = AlertModel(
-                title: "Раунд окончен!",
-                message: "Ваш результат: \(correctAnswer) из \(self.questionsAmount)\n" +
-                "Количество сыгранных квизов: \(statisticService?.gamesCount ?? 0)\n" +
-                "Рекорд: \(statisticService?.bestGame.gameStatistics() ?? "Данные отсутствуют")\n" +
-                "Средняя точность: " + String(format: "%.2f", statisticService?.totalAccuracy ?? 0.00) + "%",
-                buttonText: "Сыграть еще раз",
-                completion: {[weak self] _ in
-                    guard let self = self else { return }
-                    
-                    self.restartGame()
-                
-                })
-            viewController?.alertPresenter?.show(alertModel:alertModel)
+            let text = correctAnswer == self.questionsAmount ?
+            "Поздравляем, вы ответили на 10 из 10!" :
+            "Вы ответили на \(correctAnswer) из 10, попробуйте ещё раз!)" + "\n"
+            
+            let viewModel = QuizResultsViewModel(
+                title: "Этот раунд окончен!",
+                text: text,
+                buttonText: "Сыграть ещё раз")
+            viewController?.show(quiz: viewModel)
+            
             
         } else {
-            switchToNextQuestion()
+            self.switchToNextQuestion()
             questionFactory?.requestNextQuestion()
         }
         
     }
+    
+    func makeResultsMessage() -> String {
+        statisticService?.store(correct: correctAnswer, total: questionsAmount)
+        
+        
+        let totalPlaysCountLine = "Количество сыгранных квизов: \(statisticService?.gamesCount ?? 0)"
+        let currentGameResultLine = "Ваш результат: \(correctAnswer) из \(questionsAmount)"
+        let bestGameInfoLine = "Рекорд: \(statisticService?.bestGame.gameStatistics() ?? "Данные отсутствуют")"
+        let averageAccuracyLine = "Средняя точность: \(String(format: "%.2f", statisticService?.totalAccuracy ?? 0.00))%"
+        
+        let resultMessage = [
+            currentGameResultLine, totalPlaysCountLine, bestGameInfoLine, averageAccuracyLine
+        ].joined(separator: "\n")
+        
+        return resultMessage
+    }
+    
     
     func restartGame() {
         currentQuestionIndex = 0
